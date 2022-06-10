@@ -1,4 +1,4 @@
-package me.shiteship.java8to11;
+package me.shiteship.java8to11.lambda;
 
 public class Greeting {
 
