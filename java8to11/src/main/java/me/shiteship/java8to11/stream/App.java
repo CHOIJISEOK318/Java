@@ -92,6 +92,5 @@ public class App {
 
         spring1.forEach(System.out::println);
         spring2.forEach(System.out::println);
-
     }
 }
