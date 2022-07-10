@@ -15,7 +15,6 @@ import java.util.stream.Collectors;
 public class App {
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-
 //        CompletableFuture<Void> future = CompletableFuture.runAsync(()->{
 //            System.out.println("Hello " + Thread.currentThread().getName());
 //        });
@@ -90,6 +89,7 @@ public class App {
 //        results.get().forEach(System.out::println);
 
         boolean throwError = true;
+
         CompletableFuture<String> hello = CompletableFuture.supplyAsync(()->{
             System.out.println("Hello" + Thread.currentThread().getName());
             return "Hello";
@@ -103,6 +103,7 @@ public class App {
         System.out.println("hello = " + hello.get());
 
     }
+
 
     private static CompletableFuture<String> getWorld(String message){
         return CompletableFuture.supplyAsync(()->{

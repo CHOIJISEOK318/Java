@@ -1,7 +1,6 @@
 package me.shiteship.java8to11.concurrent.callable_and_future;
 
 import java.util.Arrays;
-import java.util.List;
 import java.util.concurrent.*;
 
 public class App {
@@ -28,6 +27,7 @@ public class App {
         System.out.println("s = " + s);
 
         executorService.shutdown();
+
     }
 
 }
